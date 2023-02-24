@@ -7,7 +7,7 @@
  * with "Fizz", multiples of 5 with "Buzz",
  * and multiples of both 3 and 5 with "FizzBuzz"
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 int main(void)
