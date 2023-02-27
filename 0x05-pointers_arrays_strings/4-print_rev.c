@@ -1,20 +1,27 @@
 #include "main.h"
+#include <string.h>
+#include <stdio.h>
 
 /**
- * print_rev - Prints a string in reverse followed by a new line.
- * @s: Pointer to the first character of the string.
+ * print_rev - Prints a string in reverse, followed by a new line
+ *
+ * @s: The string to print
  *
  * Return: void
  */
 void print_rev(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (s[len] != '\0')
-		len++;
+	/* Find the length of the string */
+	int len = strlen(s);
 
-	for (int i = len - 1; i >= 0; i--)
-		_putchar(s[i]);
+	/* Print each character in reverse order */
+	for (i = len - 1; i >= 0; i--)
+	{
+		putchar(s[i]);
+	}
 
-	_putchar('\n');
+	/* Print a newline character */
+	putchar('\n');
 }
