@@ -12,7 +12,7 @@ char *rot13(char *s)
 	char *p = s;
 	int i;
 
-	for (i = 0; *p != '\0'; i++)
+	while (*p != '\0')
 	{
 		if ((*p >= 'a' && *p <= 'm') || (*p >= 'A' && *p <= 'M'))
 			*p += 13;
@@ -20,6 +20,7 @@ char *rot13(char *s)
 			*p -= 13;
 
 		p++;
+
 	}
 
 	return (s);
