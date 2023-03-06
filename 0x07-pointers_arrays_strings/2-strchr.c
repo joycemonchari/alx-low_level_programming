@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _strchr - Entry point
- * @s: input 
+ * @s: input
  * @c: input
  * Return: Always 0 (Success)
  */
@@ -15,5 +15,5 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 			return (&s[i]);
 	}
-	return(0);
+	return (0);
 }
